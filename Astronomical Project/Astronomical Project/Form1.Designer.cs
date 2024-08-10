@@ -28,119 +28,119 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.lstData = new System.Windows.Forms.ListBox();
+            this.lblSearch = new System.Windows.Forms.Label();
+            this.lblEditIndex = new System.Windows.Forms.Label();
+            this.lblEditValue = new System.Windows.Forms.Label();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.txtEditIndex = new System.Windows.Forms.TextBox();
+            this.txtEditValue = new System.Windows.Forms.TextBox();
+            this.btnSort = new System.Windows.Forms.Button();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.btnEdit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // listBox1
+            // lstData
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 25;
-            this.listBox1.Location = new System.Drawing.Point(37, 67);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(165, 404);
-            this.listBox1.TabIndex = 0;
+            this.lstData.FormattingEnabled = true;
+            this.lstData.ItemHeight = 25;
+            this.lstData.Location = new System.Drawing.Point(58, 410);
+            this.lstData.Name = "lstData";
+            this.lstData.Size = new System.Drawing.Size(647, 129);
+            this.lstData.TabIndex = 0;
             // 
-            // label1
+            // lblSearch
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(286, 112);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 25);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "label1";
+            this.lblSearch.AutoSize = true;
+            this.lblSearch.Location = new System.Drawing.Point(36, 40);
+            this.lblSearch.Name = "lblSearch";
+            this.lblSearch.Size = new System.Drawing.Size(80, 25);
+            this.lblSearch.TabIndex = 1;
+            this.lblSearch.Text = "Search";
             // 
-            // label2
+            // lblEditIndex
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(286, 228);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(70, 25);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "label2";
+            this.lblEditIndex.AutoSize = true;
+            this.lblEditIndex.Location = new System.Drawing.Point(36, 166);
+            this.lblEditIndex.Name = "lblEditIndex";
+            this.lblEditIndex.Size = new System.Drawing.Size(107, 25);
+            this.lblEditIndex.TabIndex = 2;
+            this.lblEditIndex.Text = "Edit Index";
             // 
-            // label3
+            // lblEditValue
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(286, 349);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(70, 25);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "label3";
+            this.lblEditValue.AutoSize = true;
+            this.lblEditValue.Location = new System.Drawing.Point(36, 295);
+            this.lblEditValue.Name = "lblEditValue";
+            this.lblEditValue.Size = new System.Drawing.Size(115, 25);
+            this.lblEditValue.TabIndex = 3;
+            this.lblEditValue.Text = "New Value";
             // 
-            // textBox1
+            // txtSearch
             // 
-            this.textBox1.Location = new System.Drawing.Point(409, 112);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 31);
-            this.textBox1.TabIndex = 4;
+            this.txtSearch.Location = new System.Drawing.Point(178, 40);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(100, 31);
+            this.txtSearch.TabIndex = 4;
             // 
-            // textBox2
+            // txtEditIndex
             // 
-            this.textBox2.Location = new System.Drawing.Point(409, 222);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 31);
-            this.textBox2.TabIndex = 5;
+            this.txtEditIndex.Location = new System.Drawing.Point(178, 160);
+            this.txtEditIndex.Name = "txtEditIndex";
+            this.txtEditIndex.Size = new System.Drawing.Size(100, 31);
+            this.txtEditIndex.TabIndex = 5;
             // 
-            // textBox3
+            // txtEditValue
             // 
-            this.textBox3.Location = new System.Drawing.Point(409, 346);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 31);
-            this.textBox3.TabIndex = 6;
+            this.txtEditValue.Location = new System.Drawing.Point(178, 295);
+            this.txtEditValue.Name = "txtEditValue";
+            this.txtEditValue.Size = new System.Drawing.Size(100, 31);
+            this.txtEditValue.TabIndex = 6;
             // 
-            // button1
+            // btnSort
             // 
-            this.button1.Location = new System.Drawing.Point(98, 573);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(170, 131);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnSort.Location = new System.Drawing.Point(295, 617);
+            this.btnSort.Name = "btnSort";
+            this.btnSort.Size = new System.Drawing.Size(170, 131);
+            this.btnSort.TabIndex = 7;
+            this.btnSort.Text = "Sort";
+            this.btnSort.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnSearch
             // 
-            this.button2.Location = new System.Drawing.Point(346, 582);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(163, 122);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnSearch.Location = new System.Drawing.Point(407, 40);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(163, 122);
+            this.btnSearch.TabIndex = 8;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnEdit
             // 
-            this.button3.Location = new System.Drawing.Point(573, 582);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(156, 122);
-            this.button3.TabIndex = 9;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnEdit.Location = new System.Drawing.Point(414, 246);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(156, 122);
+            this.btnEdit.TabIndex = 9;
+            this.btnEdit.Text = "Edit";
+            this.btnEdit.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(792, 844);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.btnEdit);
+            this.Controls.Add(this.btnSearch);
+            this.Controls.Add(this.btnSort);
+            this.Controls.Add(this.txtEditValue);
+            this.Controls.Add(this.txtEditIndex);
+            this.Controls.Add(this.txtSearch);
+            this.Controls.Add(this.lblEditValue);
+            this.Controls.Add(this.lblEditIndex);
+            this.Controls.Add(this.lblSearch);
+            this.Controls.Add(this.lstData);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Astronomic ";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -148,16 +148,16 @@
 
         #endregion
 
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.ListBox lstData;
+        private System.Windows.Forms.Label lblSearch;
+        private System.Windows.Forms.Label lblEditIndex;
+        private System.Windows.Forms.Label lblEditValue;
+        private System.Windows.Forms.TextBox txtSearch;
+        private System.Windows.Forms.TextBox txtEditIndex;
+        private System.Windows.Forms.TextBox txtEditValue;
+        private System.Windows.Forms.Button btnSort;
+        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.Button btnEdit;
     }
 }
 
