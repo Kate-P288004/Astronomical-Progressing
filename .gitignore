@@ -6,3 +6,11 @@
 ".vs/" 
 ".vs/" 
 ".vs/" 
+# Ignore the .vs directory, which stores user-specific settings
+.vs/
+
+# Ignore SQLite database files
+*.sqlite
+
+# Ignore cache files generated during development
+*.cache
