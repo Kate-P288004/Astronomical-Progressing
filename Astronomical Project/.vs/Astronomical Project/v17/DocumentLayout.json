@@ -1,0 +1,40 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\kateodabas\\Astronomical-Progressing\\Astronomical Project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C293AC18-2ADB-4860-A3D5-984D721342DF}|Astronomical Project\\Astronomical Project.csproj|c:\\users\\kateodabas\\astronomical-progressing\\astronomical project\\astronomical project\\form1.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{C293AC18-2ADB-4860-A3D5-984D721342DF}|Astronomical Project\\Astronomical Project.csproj|solutionrelative:astronomical project\\form1.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.resx",
+              "DocumentMoniker": "C:\\Users\\kateodabas\\Astronomical-Progressing\\Astronomical Project\\Astronomical Project\\Form1.resx",
+              "RelativeDocumentMoniker": "Astronomical Project\\Form1.resx",
+              "ToolTip": "C:\\Users\\kateodabas\\Astronomical-Progressing\\Astronomical Project\\Astronomical Project\\Form1.resx",
+              "RelativeToolTip": "Astronomical Project\\Form1.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-08-10T13:49:37.575Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
