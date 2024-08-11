@@ -180,5 +180,10 @@ namespace Astronomic
         {
             // Placeholder for handling text changes in the edit value box
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     } // End of Form1 class
 } // End of Astronomic namespace

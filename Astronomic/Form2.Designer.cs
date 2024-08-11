@@ -43,10 +43,10 @@
             // listBoxData
             // 
             this.listBoxData.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.listBoxData.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.World, ((byte)(0)));
+            this.listBoxData.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.World, ((byte)(0)));
             this.listBoxData.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.listBoxData.FormattingEnabled = true;
-            this.listBoxData.Location = new System.Drawing.Point(35, 39);
+            this.listBoxData.Location = new System.Drawing.Point(35, 43);
             this.listBoxData.Margin = new System.Windows.Forms.Padding(4);
             this.listBoxData.Name = "listBoxData";
             this.listBoxData.Size = new System.Drawing.Size(126, 316);
@@ -59,7 +59,7 @@
             this.lblSearch.Location = new System.Drawing.Point(194, 80);
             this.lblSearch.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSearch.Name = "lblSearch";
-            this.lblSearch.Size = new System.Drawing.Size(59, 16);
+            this.lblSearch.Size = new System.Drawing.Size(100, 30);
             this.lblSearch.TabIndex = 1;
             this.lblSearch.Text = "Search";
             // 
@@ -70,7 +70,7 @@
             this.lblEditIndex.Location = new System.Drawing.Point(205, 167);
             this.lblEditIndex.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEditIndex.Name = "lblEditIndex";
-            this.lblEditIndex.Size = new System.Drawing.Size(48, 16);
+            this.lblEditIndex.Size = new System.Drawing.Size(78, 30);
             this.lblEditIndex.TabIndex = 2;
             this.lblEditIndex.Text = "Index";
             // 
@@ -80,7 +80,7 @@
             this.lblEditValue.Location = new System.Drawing.Point(207, 252);
             this.lblEditValue.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEditValue.Name = "lblEditValue";
-            this.lblEditValue.Size = new System.Drawing.Size(48, 16);
+            this.lblEditValue.Size = new System.Drawing.Size(83, 30);
             this.lblEditValue.TabIndex = 3;
             this.lblEditValue.Text = "Value";
             // 
@@ -89,7 +89,7 @@
             this.textBoxSearch.Location = new System.Drawing.Point(292, 76);
             this.textBoxSearch.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxSearch.Name = "textBoxSearch";
-            this.textBoxSearch.Size = new System.Drawing.Size(216, 23);
+            this.textBoxSearch.Size = new System.Drawing.Size(216, 37);
             this.textBoxSearch.TabIndex = 4;
             this.textBoxSearch.TextChanged += new System.EventHandler(this.textBoxSearch_TextChanged);
             // 
@@ -98,7 +98,7 @@
             this.textBoxEditIndex.Location = new System.Drawing.Point(288, 160);
             this.textBoxEditIndex.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxEditIndex.Name = "textBoxEditIndex";
-            this.textBoxEditIndex.Size = new System.Drawing.Size(216, 23);
+            this.textBoxEditIndex.Size = new System.Drawing.Size(216, 37);
             this.textBoxEditIndex.TabIndex = 5;
             this.textBoxEditIndex.TextChanged += new System.EventHandler(this.textBoxEditIndex_TextChanged);
             // 
@@ -107,7 +107,7 @@
             this.textBoxEditValue.Location = new System.Drawing.Point(288, 249);
             this.textBoxEditValue.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxEditValue.Name = "textBoxEditValue";
-            this.textBoxEditValue.Size = new System.Drawing.Size(211, 23);
+            this.textBoxEditValue.Size = new System.Drawing.Size(211, 37);
             this.textBoxEditValue.TabIndex = 6;
             this.textBoxEditValue.TextChanged += new System.EventHandler(this.textBoxEditValue_TextChanged);
             // 
@@ -148,12 +148,12 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.BackgroundImage = global::Astronomic.Properties.Resources._5815e12cacb43391232acc0cadeee1d3;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(605, 626);
+            this.ClientSize = new System.Drawing.Size(628, 626);
             this.Controls.Add(this.buttonEdit);
             this.Controls.Add(this.buttonSearch);
             this.Controls.Add(this.buttonSort);
@@ -164,12 +164,13 @@
             this.Controls.Add(this.lblEditIndex);
             this.Controls.Add(this.lblSearch);
             this.Controls.Add(this.listBoxData);
-            this.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Astronomic ";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
