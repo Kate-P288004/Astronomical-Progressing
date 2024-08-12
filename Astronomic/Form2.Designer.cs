@@ -46,7 +46,7 @@
             this.listBoxData.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.World, ((byte)(0)));
             this.listBoxData.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.listBoxData.FormattingEnabled = true;
-            this.listBoxData.Location = new System.Drawing.Point(35, 43);
+            this.listBoxData.Location = new System.Drawing.Point(192, 269);
             this.listBoxData.Margin = new System.Windows.Forms.Padding(4);
             this.listBoxData.Name = "listBoxData";
             this.listBoxData.Size = new System.Drawing.Size(126, 316);
@@ -56,7 +56,7 @@
             // lblSearch
             // 
             this.lblSearch.AutoSize = true;
-            this.lblSearch.Location = new System.Drawing.Point(194, 80);
+            this.lblSearch.Location = new System.Drawing.Point(28, 29);
             this.lblSearch.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSearch.Name = "lblSearch";
             this.lblSearch.Size = new System.Drawing.Size(100, 30);
@@ -67,7 +67,7 @@
             // 
             this.lblEditIndex.AutoSize = true;
             this.lblEditIndex.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblEditIndex.Location = new System.Drawing.Point(205, 167);
+            this.lblEditIndex.Location = new System.Drawing.Point(45, 92);
             this.lblEditIndex.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEditIndex.Name = "lblEditIndex";
             this.lblEditIndex.Size = new System.Drawing.Size(78, 30);
@@ -77,7 +77,7 @@
             // lblEditValue
             // 
             this.lblEditValue.AutoSize = true;
-            this.lblEditValue.Location = new System.Drawing.Point(207, 252);
+            this.lblEditValue.Location = new System.Drawing.Point(45, 159);
             this.lblEditValue.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEditValue.Name = "lblEditValue";
             this.lblEditValue.Size = new System.Drawing.Size(83, 30);
@@ -86,7 +86,7 @@
             // 
             // textBoxSearch
             // 
-            this.textBoxSearch.Location = new System.Drawing.Point(292, 76);
+            this.textBoxSearch.Location = new System.Drawing.Point(192, 29);
             this.textBoxSearch.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxSearch.Name = "textBoxSearch";
             this.textBoxSearch.Size = new System.Drawing.Size(216, 37);
@@ -95,7 +95,7 @@
             // 
             // textBoxEditIndex
             // 
-            this.textBoxEditIndex.Location = new System.Drawing.Point(288, 160);
+            this.textBoxEditIndex.Location = new System.Drawing.Point(192, 92);
             this.textBoxEditIndex.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxEditIndex.Name = "textBoxEditIndex";
             this.textBoxEditIndex.Size = new System.Drawing.Size(216, 37);
@@ -104,7 +104,7 @@
             // 
             // textBoxEditValue
             // 
-            this.textBoxEditValue.Location = new System.Drawing.Point(288, 249);
+            this.textBoxEditValue.Location = new System.Drawing.Point(192, 152);
             this.textBoxEditValue.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxEditValue.Name = "textBoxEditValue";
             this.textBoxEditValue.Size = new System.Drawing.Size(211, 37);
@@ -115,7 +115,7 @@
             // 
             this.buttonSort.BackColor = System.Drawing.SystemColors.Window;
             this.buttonSort.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonSort.Location = new System.Drawing.Point(35, 486);
+            this.buttonSort.Location = new System.Drawing.Point(384, 365);
             this.buttonSort.Margin = new System.Windows.Forms.Padding(4);
             this.buttonSort.Name = "buttonSort";
             this.buttonSort.Size = new System.Drawing.Size(140, 60);
@@ -126,7 +126,7 @@
             // 
             // buttonSearch
             // 
-            this.buttonSearch.Location = new System.Drawing.Point(221, 486);
+            this.buttonSearch.Location = new System.Drawing.Point(455, 29);
             this.buttonSearch.Margin = new System.Windows.Forms.Padding(4);
             this.buttonSearch.Name = "buttonSearch";
             this.buttonSearch.Size = new System.Drawing.Size(140, 60);
@@ -137,7 +137,7 @@
             // 
             // buttonEdit
             // 
-            this.buttonEdit.Location = new System.Drawing.Point(412, 486);
+            this.buttonEdit.Location = new System.Drawing.Point(451, 144);
             this.buttonEdit.Margin = new System.Windows.Forms.Padding(4);
             this.buttonEdit.Name = "buttonEdit";
             this.buttonEdit.Size = new System.Drawing.Size(144, 60);
