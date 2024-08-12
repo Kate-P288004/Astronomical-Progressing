@@ -46,10 +46,10 @@
             this.listBoxData.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.World, ((byte)(0)));
             this.listBoxData.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.listBoxData.FormattingEnabled = true;
-            this.listBoxData.Location = new System.Drawing.Point(192, 269);
+            this.listBoxData.Location = new System.Drawing.Point(388, 277);
             this.listBoxData.Margin = new System.Windows.Forms.Padding(4);
             this.listBoxData.Name = "listBoxData";
-            this.listBoxData.Size = new System.Drawing.Size(126, 316);
+            this.listBoxData.Size = new System.Drawing.Size(116, 316);
             this.listBoxData.TabIndex = 0;
             this.listBoxData.SelectedIndexChanged += new System.EventHandler(this.listBoxData_SelectedIndexChanged);
             // 
@@ -115,7 +115,7 @@
             // 
             this.buttonSort.BackColor = System.Drawing.SystemColors.Window;
             this.buttonSort.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonSort.Location = new System.Drawing.Point(384, 365);
+            this.buttonSort.Location = new System.Drawing.Point(141, 449);
             this.buttonSort.Margin = new System.Windows.Forms.Padding(4);
             this.buttonSort.Name = "buttonSort";
             this.buttonSort.Size = new System.Drawing.Size(140, 60);
