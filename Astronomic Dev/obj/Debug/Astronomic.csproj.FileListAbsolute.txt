@@ -1,0 +1,30 @@
+C:\Users\P288004\Desktop\Astronomic\Astronomic\Astronomic\bin\Debug\Astronomic.exe.config
+C:\Users\P288004\Desktop\Astronomic\Astronomic\Astronomic\bin\Debug\Astronomic.exe
+C:\Users\P288004\Desktop\Astronomic\Astronomic\Astronomic\bin\Debug\Astronomic.pdb
+C:\Users\P288004\Desktop\Astronomic\Astronomic\Astronomic\obj\Debug\Astronomic.csproj.AssemblyReference.cache
+C:\Users\P288004\Desktop\Astronomic\Astronomic\Astronomic\obj\Debug\Astronomic.Form1.resources
+C:\Users\P288004\Desktop\Astronomic\Astronomic\Astronomic\obj\Debug\Astronomic.Properties.Resources.resources
+C:\Users\P288004\Desktop\Astronomic\Astronomic\Astronomic\obj\Debug\Astronomic.csproj.GenerateResource.cache
+C:\Users\P288004\Desktop\Astronomic\Astronomic\Astronomic\obj\Debug\Astronomic.csproj.CoreCompileInputs.cache
+C:\Users\P288004\Desktop\Astronomic\Astronomic\Astronomic\obj\Debug\Astronomic.exe
+C:\Users\P288004\Desktop\Astronomic\Astronomic\Astronomic\obj\Debug\Astronomic.pdb
+\\Mac\Home\Desktop\Astronomic (3)\Astronomic\Astronomic\bin\Debug\Astronomic.exe.config
+\\Mac\Home\Desktop\Astronomic (3)\Astronomic\Astronomic\bin\Debug\Astronomic.exe
+\\Mac\Home\Desktop\Astronomic (3)\Astronomic\Astronomic\bin\Debug\Astronomic.pdb
+\\Mac\Home\Desktop\Astronomic (3)\Astronomic\Astronomic\obj\Debug\Astronomic.csproj.AssemblyReference.cache
+\\Mac\Home\Desktop\Astronomic (3)\Astronomic\Astronomic\obj\Debug\Astronomic.Form1.resources
+\\Mac\Home\Desktop\Astronomic (3)\Astronomic\Astronomic\obj\Debug\Astronomic.Properties.Resources.resources
+\\Mac\Home\Desktop\Astronomic (3)\Astronomic\Astronomic\obj\Debug\Astronomic.csproj.GenerateResource.cache
+\\Mac\Home\Desktop\Astronomic (3)\Astronomic\Astronomic\obj\Debug\Astronomic.csproj.CoreCompileInputs.cache
+\\Mac\Home\Desktop\Astronomic (3)\Astronomic\Astronomic\obj\Debug\Astronomic.exe
+\\Mac\Home\Desktop\Astronomic (3)\Astronomic\Astronomic\obj\Debug\Astronomic.pdb
+\\psf\Home\Desktop\astro-test\Astronomic\bin\Debug\Astronomic.exe.config
+\\psf\Home\Desktop\astro-test\Astronomic\bin\Debug\Astronomic.exe
+\\psf\Home\Desktop\astro-test\Astronomic\bin\Debug\Astronomic.pdb
+\\psf\Home\Desktop\astro-test\Astronomic\obj\Debug\Astronomic.csproj.AssemblyReference.cache
+\\psf\Home\Desktop\astro-test\Astronomic\obj\Debug\Astronomic.Form1.resources
+\\psf\Home\Desktop\astro-test\Astronomic\obj\Debug\Astronomic.Properties.Resources.resources
+\\psf\Home\Desktop\astro-test\Astronomic\obj\Debug\Astronomic.csproj.GenerateResource.cache
+\\psf\Home\Desktop\astro-test\Astronomic\obj\Debug\Astronomic.csproj.CoreCompileInputs.cache
+\\psf\Home\Desktop\astro-test\Astronomic\obj\Debug\Astronomic.exe
+\\psf\Home\Desktop\astro-test\Astronomic\obj\Debug\Astronomic.pdb

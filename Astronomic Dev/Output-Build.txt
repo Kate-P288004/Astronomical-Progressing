@@ -1,0 +1,5 @@
+﻿Build started at 5:07 PM...
+1>------ Build started: Project: Astronomic, Configuration: Debug Any CPU ------
+1>  Astronomic -> \\psf\Home\Desktop\astro-test\Astronomic\bin\Debug\Astronomic.exe
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+========== Build completed at 5:07 PM and took 01.926 seconds ==========
