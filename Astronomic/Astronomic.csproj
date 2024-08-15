@@ -89,5 +89,8 @@
   <ItemGroup>
     <None Include="5815e12cacb43391232acc0cadeee1d3.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TestwallpaperForm.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
