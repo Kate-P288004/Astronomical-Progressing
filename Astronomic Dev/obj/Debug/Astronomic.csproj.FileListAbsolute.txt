@@ -28,3 +28,13 @@ C:\Users\P288004\Desktop\Astronomic\Astronomic\Astronomic\obj\Debug\Astronomic.p
 \\psf\Home\Desktop\astro-test\Astronomic\obj\Debug\Astronomic.csproj.CoreCompileInputs.cache
 \\psf\Home\Desktop\astro-test\Astronomic\obj\Debug\Astronomic.exe
 \\psf\Home\Desktop\astro-test\Astronomic\obj\Debug\Astronomic.pdb
+C:\Users\30104679\Desktop\Astronomic Dev\bin\Debug\Astronomic.exe.config
+C:\Users\30104679\Desktop\Astronomic Dev\bin\Debug\Astronomic.exe
+C:\Users\30104679\Desktop\Astronomic Dev\bin\Debug\Astronomic.pdb
+C:\Users\30104679\Desktop\Astronomic Dev\obj\Debug\Astronomic.csproj.AssemblyReference.cache
+C:\Users\30104679\Desktop\Astronomic Dev\obj\Debug\Astronomic.Form1.resources
+C:\Users\30104679\Desktop\Astronomic Dev\obj\Debug\Astronomic.Properties.Resources.resources
+C:\Users\30104679\Desktop\Astronomic Dev\obj\Debug\Astronomic.csproj.GenerateResource.cache
+C:\Users\30104679\Desktop\Astronomic Dev\obj\Debug\Astronomic.csproj.CoreCompileInputs.cache
+C:\Users\30104679\Desktop\Astronomic Dev\obj\Debug\Astronomic.exe
+C:\Users\30104679\Desktop\Astronomic Dev\obj\Debug\Astronomic.pdb
