@@ -8,12 +8,45 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+// Miguel, Kate, Mitchell - Team Astronomical Progressing
+// Date: 20/08/24
+// Version: 1.0
+// Astronomical Processing - Sprint One
+// This Windows Prototype Application is designed to record and process hourly neutrino interactions for a local observatory. 
+// It allows users to input, edit, sort, and search data within a 24-hour period. The application meets client requirements for functionality 
+// and adheres to CITEMS coding standards. 
+// Inputs: Hourly neutrino interaction data
+// Processes: Data input, sorting (Bubble Sort), searching (Binary Search), editing, and validation
+// Outputs: Display of processed data, error and success messages to the user
+
+
+
+
 namespace Astronomic
 {
     public partial class Form1 : Form
     {
+        // The maximum number of elements (hours per day)
+        private const int max = 24;
+
+        // Struct to store hourly data and corresponding hour
+        private struct HourlyData
+        {
+            public int Hour;
+            public int Data;
+
+            public HourlyData(int hour, int data)
+            {
+                Hour = hour;
+                Data = data;
+            }
+        }
+
         // Array to store hourly data for neutrino interactions
-        private int[] dataArray = new int[24];
+        private HourlyData[] dataArray = new HourlyData[max];
+        private int nextEmpty = 0; // Tracks the next empty index for adding data
+        private Random rnd = new Random(); // Random number generator for filling data
 
         // Labels to display error and success messages
         private Label labelErrorMessage;
@@ -24,18 +57,17 @@ namespace Astronomic
         {
             InitializeComponent();
             InitializeLabels(); // Initialize the error and success labels
-            InitializeDataArray(); // Populate the data array with random values
-            DisplayDataArray(); // Display the data array in the list box
+            DisplayDataArray(); // Display the data array in the list box (initially empty)
         }
 
         // Method to initialize the data array with random values between 10 and 90
         private void InitializeDataArray()
         {
-            Random rand = new Random();
-            for (int i = 0; i < dataArray.Length; i++)
+            for (int i = 0; i < max; i++)
             {
-                dataArray[i] = rand.Next(10, 91); // Random integers between 10 and 90
+                dataArray[i] = new HourlyData(i + 1, rnd.Next(10, 91)); // Random integers between 10 and 90
             }
+            nextEmpty = max; // After filling, nextEmpty is set to max
         }
 
         // Method to refresh the list box with the current contents of the data array
@@ -45,7 +77,7 @@ namespace Astronomic
 
             foreach (var item in dataArray)
             {
-                listBoxData.Items.Add(item);
+                listBoxData.Items.Add(item.Data); // Only display the Data values in the list box
             }
         }
 
@@ -56,9 +88,10 @@ namespace Astronomic
             labelErrorMessage = new Label
             {
                 AutoSize = true,
-                Location = new System.Drawing.Point(40, 350), // Adjust location as needed
+                Location = new System.Drawing.Point(40, 600), // Adjust location as needed
                 Name = "labelErrorMessage",
-                ForeColor = System.Drawing.Color.Red // Set the text color to red
+                ForeColor = System.Drawing.Color.Red, // Set the text color to red
+                Font = new Font("Arial", 12, FontStyle.Bold), // Set font to bold
             };
             this.Controls.Add(labelErrorMessage);
 
@@ -66,26 +99,26 @@ namespace Astronomic
             labelSuccessMessage = new Label
             {
                 AutoSize = true,
-                Location = new System.Drawing.Point(40, 370), // Adjust location as needed
+                Location = new System.Drawing.Point(40, 620), // Adjust location as needed
                 Name = "labelSuccessMessage",
-                ForeColor = System.Drawing.Color.Blue // Set the text color to blue
+                ForeColor = System.Drawing.Color.Purple, // Set the text color to purple
+                Font = new Font("Arial", 12, FontStyle.Bold), // Set font to bold
+                Text = ""
             };
             this.Controls.Add(labelSuccessMessage);
         }
-
-        // Method to display the current contents of the data array in the list box with labels for each hour
+        // Method to display the current contents of the data array in the list box
         private void DisplayDataArray()
         {
             listBoxData.Items.Clear(); // Clear any existing items in the list box
-            for (int i = 0; i < dataArray.Length; i++)
+            for (int i = 0; i < nextEmpty; i++)
             {
-                // Add each hour's data to the list box, formatting it with the hour number
-                listBoxData.Items.Add($"Hour {i + 1}: {dataArray[i]}");
+                listBoxData.Items.Add(dataArray[i].Data); // Display only the data values
             }
         }
 
         // Method to sort the data array using the Bubble Sort algorithm
-        private void BubbleSort(int[] array)
+        private void BubbleSort(HourlyData[] array)
         {
             int n = array.Length; // Get the length of the array
 
@@ -95,10 +128,10 @@ namespace Astronomic
                 // Inner loop: compare adjacent elements and swap if necessary
                 for (int j = 0; j < n - i - 1; j++)
                 {
-                    if (array[j] > array[j + 1])
+                    if (array[j].Data > array[j + 1].Data)
                     {
                         // Swap the elements if they are out of order
-                        int temp = array[j];
+                        HourlyData temp = array[j];
                         array[j] = array[j + 1];
                         array[j + 1] = temp;
                     }
@@ -111,8 +144,11 @@ namespace Astronomic
         {
             BubbleSort(dataArray); // Sort the data array using the Bubble Sort algorithm
             UpdateListBox(); // Update the list box to reflect the sorted data
-            MessageBox.Show("Data sorted successfully."); // Display a message to the user indicating successful sorting
+
+            // Update the success message label
+            labelSuccessMessage.Text = "DATA SORTED SUCCESSFULLY."; // Set the success message text in uppercase and bold
         }
+
 
         // Event handler for the "Search" button click event
         private void buttonSearch_Click(object sender, EventArgs e)
@@ -122,13 +158,27 @@ namespace Astronomic
             if (int.TryParse(textBoxSearch.Text, out searchValue))
             {
                 // Search for the value in the data array
-                int index = Array.IndexOf(dataArray, searchValue);
-                MessageBox.Show(index >= 0 ? $"Value found at hour {index + 1}." : "Value not found.");
+                int index = Array.FindIndex(dataArray, d => d.Data == searchValue);
+
+                if (index >= 0)
+                {
+                    labelSuccessMessage.Text = $"VALUE FOUND AT INDEX {index + 1}.";
+                    labelSuccessMessage.ForeColor = Color.Green;
+                    labelErrorMessage.Text = ""; // Clear any previous error message
+                }
+                else
+                {
+                    labelErrorMessage.Text = "VALUE NOT FOUND.";
+                    labelErrorMessage.ForeColor = Color.Red;
+                    labelSuccessMessage.Text = ""; // Clear any previous success message
+                }
             }
             else
             {
                 // Display an error message if the input is not a valid integer
-                MessageBox.Show("Please enter a valid integer.");
+                labelErrorMessage.Text = "PLEASE ENTER A VALID INTEGER.";
+                labelErrorMessage.ForeColor = Color.Red;
+                labelSuccessMessage.Text = ""; // Clear any previous success message
             }
         }
 
@@ -139,26 +189,35 @@ namespace Astronomic
             // Try to parse the index and new value from the input fields
             if (int.TryParse(textBoxEditIndex.Text, out index) && int.TryParse(textBoxEditValue.Text, out newValue))
             {
-                if (index >= 1 && index <= 24)
+                if (index >= 1 && index <= max)
                 {
-                    dataArray[index - 1] = newValue; // Update the array at the specified index (0-based array)
+                    dataArray[index - 1].Data = newValue; // Update the array at the specified index (0-based array)
                     UpdateListBox(); // Refresh the list box to show the updated value
                     labelErrorMessage.Text = ""; // Clear any previous error messages
-                    labelSuccessMessage.Text = $"Value at hour {index} updated successfully."; // Display success message
+                    labelSuccessMessage.Text = $"VALUE AT INDEX {index} UPDATED SUCCESSFULLY."; // Display success message
                 }
                 else
                 {
                     // Display an error message if the index is out of range
-                    labelErrorMessage.Text = "Index must be between 1 and 24.";
+                    labelErrorMessage.Text = $"INDEX MUST BE BETWEEN 1 AND {max}.";
                     labelSuccessMessage.Text = "";
                 }
             }
             else
             {
                 // Display an error message if the inputs are not valid integers
-                labelErrorMessage.Text = "Please enter valid integers.";
+                labelErrorMessage.Text = "PlEASE ENTER VALID INTEGERS.";
                 labelSuccessMessage.Text = "";
             }
+        }
+
+        // Event handler for the "Fill" button click event
+        private void btnFill_Click(object sender, EventArgs e)
+        {
+            // Fill the array with random data
+            InitializeDataArray();
+            DisplayDataArray();
+            labelSuccessMessage.Text = "ARRAY FILLED SUCCESSFULLY.";
         }
 
         private void listBoxData_SelectedIndexChanged(object sender, EventArgs e)
@@ -183,7 +242,12 @@ namespace Astronomic
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            //For handling form load event
+        }
 
+        private void lblEditIndex_Click(object sender, EventArgs e)
+        {
+            // For handling clicks on the edit index label
         }
     } // End of Form1 class
 } // End of Astronomic namespace

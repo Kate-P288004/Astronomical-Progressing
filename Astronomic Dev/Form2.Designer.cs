@@ -39,119 +39,134 @@
             this.buttonSort = new System.Windows.Forms.Button();
             this.buttonSearch = new System.Windows.Forms.Button();
             this.buttonEdit = new System.Windows.Forms.Button();
+            this.btnFill = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listBoxData
             // 
             this.listBoxData.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.listBoxData.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.World, ((byte)(0)));
+            this.listBoxData.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxData.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.listBoxData.FormattingEnabled = true;
-            this.listBoxData.Location = new System.Drawing.Point(451, 265);
+            this.listBoxData.ItemHeight = 22;
+            this.listBoxData.Location = new System.Drawing.Point(234, 210);
             this.listBoxData.Margin = new System.Windows.Forms.Padding(4);
             this.listBoxData.Name = "listBoxData";
-            this.listBoxData.Size = new System.Drawing.Size(116, 316);
+            this.listBoxData.Size = new System.Drawing.Size(144, 334);
             this.listBoxData.TabIndex = 0;
             this.listBoxData.SelectedIndexChanged += new System.EventHandler(this.listBoxData_SelectedIndexChanged);
             // 
             // lblSearch
             // 
             this.lblSearch.AutoSize = true;
-            this.lblSearch.Font = new System.Drawing.Font("Papyrus", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSearch.Location = new System.Drawing.Point(28, 29);
+            this.lblSearch.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSearch.Location = new System.Drawing.Point(37, 23);
             this.lblSearch.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSearch.Name = "lblSearch";
-            this.lblSearch.Size = new System.Drawing.Size(65, 24);
+            this.lblSearch.Size = new System.Drawing.Size(60, 19);
             this.lblSearch.TabIndex = 1;
-            this.lblSearch.Text = "Search";
+            this.lblSearch.Text = "VALUE";
             // 
             // lblEditIndex
             // 
             this.lblEditIndex.AutoSize = true;
             this.lblEditIndex.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblEditIndex.Font = new System.Drawing.Font("Papyrus", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEditIndex.Location = new System.Drawing.Point(45, 92);
+            this.lblEditIndex.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEditIndex.Location = new System.Drawing.Point(13, 89);
             this.lblEditIndex.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEditIndex.Name = "lblEditIndex";
-            this.lblEditIndex.Size = new System.Drawing.Size(49, 24);
+            this.lblEditIndex.Size = new System.Drawing.Size(98, 19);
             this.lblEditIndex.TabIndex = 2;
-            this.lblEditIndex.Text = "Index";
+            this.lblEditIndex.Text = "EDIT INDEX";
             // 
             // lblEditValue
             // 
             this.lblEditValue.AutoSize = true;
-            this.lblEditValue.Font = new System.Drawing.Font("Papyrus", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEditValue.Location = new System.Drawing.Point(45, 159);
+            this.lblEditValue.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEditValue.Location = new System.Drawing.Point(13, 153);
             this.lblEditValue.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEditValue.Name = "lblEditValue";
-            this.lblEditValue.Size = new System.Drawing.Size(53, 24);
+            this.lblEditValue.Size = new System.Drawing.Size(102, 19);
             this.lblEditValue.TabIndex = 3;
-            this.lblEditValue.Text = "Value";
+            this.lblEditValue.Text = "NEW VALUE";
             // 
             // textBoxSearch
             // 
-            this.textBoxSearch.Location = new System.Drawing.Point(192, 29);
+            this.textBoxSearch.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.textBoxSearch.Location = new System.Drawing.Point(28, 45);
             this.textBoxSearch.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxSearch.Name = "textBoxSearch";
-            this.textBoxSearch.Size = new System.Drawing.Size(216, 22);
+            this.textBoxSearch.Size = new System.Drawing.Size(69, 22);
             this.textBoxSearch.TabIndex = 4;
             this.textBoxSearch.TextChanged += new System.EventHandler(this.textBoxSearch_TextChanged);
             // 
             // textBoxEditIndex
             // 
-            this.textBoxEditIndex.Location = new System.Drawing.Point(192, 92);
+            this.textBoxEditIndex.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.textBoxEditIndex.Location = new System.Drawing.Point(28, 111);
             this.textBoxEditIndex.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxEditIndex.Name = "textBoxEditIndex";
-            this.textBoxEditIndex.Size = new System.Drawing.Size(216, 22);
+            this.textBoxEditIndex.Size = new System.Drawing.Size(69, 22);
             this.textBoxEditIndex.TabIndex = 5;
             this.textBoxEditIndex.TextChanged += new System.EventHandler(this.textBoxEditIndex_TextChanged);
             // 
             // textBoxEditValue
             // 
-            this.textBoxEditValue.Location = new System.Drawing.Point(192, 152);
+            this.textBoxEditValue.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.textBoxEditValue.Location = new System.Drawing.Point(28, 175);
             this.textBoxEditValue.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxEditValue.Name = "textBoxEditValue";
-            this.textBoxEditValue.Size = new System.Drawing.Size(211, 22);
+            this.textBoxEditValue.Size = new System.Drawing.Size(69, 22);
             this.textBoxEditValue.TabIndex = 6;
             this.textBoxEditValue.TextChanged += new System.EventHandler(this.textBoxEditValue_TextChanged);
             // 
             // buttonSort
             // 
             this.buttonSort.BackColor = System.Drawing.SystemColors.Window;
-            this.buttonSort.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonSort.Font = new System.Drawing.Font("Papyrus", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSort.Location = new System.Drawing.Point(153, 461);
+            this.buttonSort.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSort.Location = new System.Drawing.Point(80, 294);
             this.buttonSort.Margin = new System.Windows.Forms.Padding(4);
             this.buttonSort.Name = "buttonSort";
-            this.buttonSort.Size = new System.Drawing.Size(140, 60);
+            this.buttonSort.Size = new System.Drawing.Size(120, 50);
             this.buttonSort.TabIndex = 7;
-            this.buttonSort.Text = "Sort";
-            this.buttonSort.UseVisualStyleBackColor = false;
+            this.buttonSort.Text = "SORT";
+            this.buttonSort.UseVisualStyleBackColor = true;
             this.buttonSort.Click += new System.EventHandler(this.buttonSort_Click);
             // 
             // buttonSearch
             // 
-            this.buttonSearch.Font = new System.Drawing.Font("Papyrus", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSearch.Location = new System.Drawing.Point(455, 29);
+            this.buttonSearch.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSearch.Location = new System.Drawing.Point(179, 31);
             this.buttonSearch.Margin = new System.Windows.Forms.Padding(4);
             this.buttonSearch.Name = "buttonSearch";
-            this.buttonSearch.Size = new System.Drawing.Size(140, 60);
+            this.buttonSearch.Size = new System.Drawing.Size(118, 48);
             this.buttonSearch.TabIndex = 8;
-            this.buttonSearch.Text = "Search";
+            this.buttonSearch.Text = "SEARCH";
             this.buttonSearch.UseVisualStyleBackColor = true;
             this.buttonSearch.Click += new System.EventHandler(this.buttonSearch_Click);
             // 
             // buttonEdit
             // 
-            this.buttonEdit.Font = new System.Drawing.Font("Papyrus", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonEdit.Location = new System.Drawing.Point(451, 144);
+            this.buttonEdit.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonEdit.Location = new System.Drawing.Point(179, 111);
             this.buttonEdit.Margin = new System.Windows.Forms.Padding(4);
             this.buttonEdit.Name = "buttonEdit";
-            this.buttonEdit.Size = new System.Drawing.Size(144, 60);
+            this.buttonEdit.Size = new System.Drawing.Size(118, 48);
             this.buttonEdit.TabIndex = 9;
-            this.buttonEdit.Text = "Edit";
+            this.buttonEdit.Text = "EDIT";
             this.buttonEdit.UseVisualStyleBackColor = true;
             this.buttonEdit.Click += new System.EventHandler(this.buttonEdit_Click);
+            // 
+            // btnFill
+            // 
+            this.btnFill.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFill.Location = new System.Drawing.Point(80, 377);
+            this.btnFill.Name = "btnFill";
+            this.btnFill.Size = new System.Drawing.Size(120, 61);
+            this.btnFill.TabIndex = 10;
+            this.btnFill.Text = "FILL DATA";
+            this.btnFill.UseVisualStyleBackColor = true;
+            this.btnFill.Click += new System.EventHandler(this.btnFill_Click);
             // 
             // Form1
             // 
@@ -160,7 +175,8 @@
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(699, 626);
+            this.ClientSize = new System.Drawing.Size(421, 675);
+            this.Controls.Add(this.btnFill);
             this.Controls.Add(this.buttonEdit);
             this.Controls.Add(this.buttonSearch);
             this.Controls.Add(this.buttonSort);
@@ -195,6 +211,7 @@
         private System.Windows.Forms.Button buttonSort;
         private System.Windows.Forms.Button buttonSearch;
         private System.Windows.Forms.Button buttonEdit;
+        private System.Windows.Forms.Button btnFill;
     }
 }
 

@@ -38,3 +38,13 @@ C:\Users\30104679\Desktop\Astronomic Dev\obj\Debug\Astronomic.csproj.GenerateRes
 C:\Users\30104679\Desktop\Astronomic Dev\obj\Debug\Astronomic.csproj.CoreCompileInputs.cache
 C:\Users\30104679\Desktop\Astronomic Dev\obj\Debug\Astronomic.exe
 C:\Users\30104679\Desktop\Astronomic Dev\obj\Debug\Astronomic.pdb
+C:\Mac\Home\Desktop\Astronomic Dev\bin\Debug\Astronomic.exe
+C:\Mac\Home\Desktop\Astronomic Dev\bin\Debug\Astronomic.exe.config
+C:\Mac\Home\Desktop\Astronomic Dev\bin\Debug\Astronomic.pdb
+C:\Mac\Home\Desktop\Astronomic Dev\obj\Debug\Astronomic.csproj.AssemblyReference.cache
+C:\Mac\Home\Desktop\Astronomic Dev\obj\Debug\Astronomic.Form1.resources
+C:\Mac\Home\Desktop\Astronomic Dev\obj\Debug\Astronomic.Properties.Resources.resources
+C:\Mac\Home\Desktop\Astronomic Dev\obj\Debug\Astronomic.csproj.GenerateResource.cache
+C:\Mac\Home\Desktop\Astronomic Dev\obj\Debug\Astronomic.csproj.CoreCompileInputs.cache
+C:\Mac\Home\Desktop\Astronomic Dev\obj\Debug\Astronomic.exe
+C:\Mac\Home\Desktop\Astronomic Dev\obj\Debug\Astronomic.pdb
